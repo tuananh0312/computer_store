@@ -1,5 +1,5 @@
 import React from 'react';
-const Homepage = () =>{
+const Homepage = () => {
     return (
         <div>
             This is Homepage
