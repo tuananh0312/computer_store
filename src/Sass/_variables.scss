@@ -7,7 +7,11 @@ $txt-white:#fff;
 
 
 $btn-bg-color:$main-bg;
+<<<<<<< HEAD
 $btn-mani-color:#fff;
+=======
+$btn-main-color:#fff;
+>>>>>>> 6c4e8ef71f4b232713a84c3dce9ea04f81844b39
 
 $header-height:150px;
 $header-tablet-color:70px;
@@ -20,6 +24,10 @@ $colors:(
     "orange":#e79c41,
     "gray":#e9edf2,
     "white":$txt-white,
+<<<<<<< HEAD
+=======
+    "main":$main-color
+>>>>>>> 6c4e8ef71f4b232713a84c3dce9ea04f81844b39
 );
 $max-mobile-width: 770px;
 $min-mobile-width:390px;
@@ -27,4 +35,9 @@ $max-tablet-width: 1024px;
 $min-tablet-width:768px;
 $max-Desktop-width:1536px;
 $min-Desktop-width:1025px;
+<<<<<<< HEAD
+=======
+$min-between-width:1028px;
+$max-between-width:1310px;
+>>>>>>> 6c4e8ef71f4b232713a84c3dce9ea04f81844b39
 $numbers:(0,1,2,3,4,5,6,7,8,9)

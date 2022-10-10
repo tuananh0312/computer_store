@@ -8,7 +8,13 @@
     -webkit-tap-highlight-color: transparent;
     user-select: none;
 }
+<<<<<<< HEAD
 
+=======
+a:hover{
+    color:$main-color;
+}
+>>>>>>> 6c4e8ef71f4b232713a84c3dce9ea04f81844b39
 html {
     font-size: 15px;
 }
@@ -38,14 +44,22 @@ $value in $colors {
 }
 
 @each $frame in $numbers {
+<<<<<<< HEAD
     .grid-col-#{frame} {
+=======
+    .grid-col-#{$frame} {
+>>>>>>> 6c4e8ef71f4b232713a84c3dce9ea04f81844b39
         grid-template-columns: repeat($frame, 1fr);
     }
 
 }
 
 @each $frame in $numbers {
+<<<<<<< HEAD
     .grid-col-md-#{frame} {
+=======
+    .grid-col-md-#{$frame} {
+>>>>>>> 6c4e8ef71f4b232713a84c3dce9ea04f81844b39
         @include tablet {
             grid-template-columns: repeat($frame, 1fr);
 
@@ -55,10 +69,16 @@ $value in $colors {
 }
 
 @each $frame in $numbers {
+<<<<<<< HEAD
     .grid-col-sm-#{frame} {
         @include mobile {
             grid-template-columns: repeat($frame, 1fr);
 
+=======
+    .grid-col-sm-#{$frame} {
+        @include mobile {
+            grid-template-columns: repeat($frame, 1fr);
+>>>>>>> 6c4e8ef71f4b232713a84c3dce9ea04f81844b39
         }
     }
 
@@ -67,9 +87,18 @@ $value in $colors {
 .container {
     width: 100%;
     max-width: $max-Desktop-width;
+<<<<<<< HEAD
     padding: 0 100px;
     margin: auto;
 
+=======
+    padding: 0 50px;
+    margin: auto;
+    
+    @include tablet{
+        padding:0;
+    }
+>>>>>>> 6c4e8ef71f4b232713a84c3dce9ea04f81844b39
     @include tablet {
         padding: 0 20px;
 
@@ -91,4 +120,11 @@ $value in $colors {
     @include mobile {
         margin-top: calc(($header-tablet-height)+10px)
     }
+<<<<<<< HEAD
 }   
+=======
+}   
+.grid{
+    display: grid;
+}
+>>>>>>> 6c4e8ef71f4b232713a84c3dce9ea04f81844b39

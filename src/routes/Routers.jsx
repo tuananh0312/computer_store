@@ -7,6 +7,10 @@ import { NoMatch } from '../pages/PageError'
 import SignIn from '../pages/SignIn'
 import SignUp from '../pages/SignUp'
 import Product from '../pages/Product'
+<<<<<<< HEAD
+=======
+import CateLog from '../pages/CateLog'
+>>>>>>> 6c4e8ef71f4b232713a84c3dce9ea04f81844b39
 const Routerslink = () => {
     return (
         <>
@@ -15,12 +19,18 @@ const Routerslink = () => {
             <Route exact path='/Homepage' element={<Homepage />}/>
             <Route exact path='/product' element={<Product />}/>
             <Route exact path='*' element={<NoMatch />}/>
+<<<<<<< HEAD
+=======
+            <Route exact path='/catelog' element={<CateLog />}/>
+            <Route exact path='/SignIn' element={<SignIn />}/>
+>>>>>>> 6c4e8ef71f4b232713a84c3dce9ea04f81844b39
         </Routes>
         </>
     )
 }
 
 export default Routerslink
+<<<<<<< HEAD
 const RoutesOutsite = () => {
     <>
         <Routes>
@@ -29,3 +39,5 @@ const RoutesOutsite = () => {
         </Routes>
     </>
 }
+=======
+>>>>>>> 6c4e8ef71f4b232713a84c3dce9ea04f81844b39

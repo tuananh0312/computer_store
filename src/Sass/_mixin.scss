@@ -1,5 +1,9 @@
 @mixin flex($align-item,$justify-content ){
+<<<<<<< HEAD
     display: flex;
+=======
+    display: flex !important;
+>>>>>>> 6c4e8ef71f4b232713a84c3dce9ea04f81844b39
     justify-content: $justify-content;
     align-items:$align-item ;
 }
@@ -17,3 +21,11 @@
         @content;
     }
 }
+<<<<<<< HEAD
+=======
+@mixin Desktopbetween{
+    @media(min-width: $min-between-width) and (max-width: $max-between-width){
+        @content;
+    }
+}
+>>>>>>> 6c4e8ef71f4b232713a84c3dce9ea04f81844b39
