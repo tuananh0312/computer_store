@@ -7,7 +7,7 @@ $txt-white:#fff;
 
 
 $btn-bg-color:$main-bg;
-$btn-mani-color:#fff;
+$btn-main-color:#fff;
 
 $header-height:150px;
 $header-tablet-color:70px;
@@ -20,6 +20,7 @@ $colors:(
     "orange":#e79c41,
     "gray":#e9edf2,
     "white":$txt-white,
+    "main":$main-color
 );
 $max-mobile-width: 770px;
 $min-mobile-width:390px;
@@ -27,4 +28,6 @@ $max-tablet-width: 1024px;
 $min-tablet-width:768px;
 $max-Desktop-width:1536px;
 $min-Desktop-width:1025px;
+$min-between-width:1028px;
+$max-between-width:1310px;
 $numbers:(0,1,2,3,4,5,6,7,8,9)

@@ -2,10 +2,10 @@ import React from 'react'
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
-import Header from './Header'
-import Footer from './Footer'
+import Header from '../Header'
+import Footer from '../Footer'
 
-import Routerslink from '../routes/Routers'
+import Routerslink from '../../routes/Routers'
 
 const Layout = () => {
   return (

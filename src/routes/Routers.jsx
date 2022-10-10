@@ -7,6 +7,7 @@ import { NoMatch } from '../pages/PageError'
 import SignIn from '../pages/SignIn'
 import SignUp from '../pages/SignUp'
 import Product from '../pages/Product'
+import CateLog from '../pages/CateLog'
 const Routerslink = () => {
     return (
         <>
@@ -15,17 +16,11 @@ const Routerslink = () => {
             <Route exact path='/Homepage' element={<Homepage />}/>
             <Route exact path='/product' element={<Product />}/>
             <Route exact path='*' element={<NoMatch />}/>
+            <Route exact path='/catelog' element={<CateLog />}/>
+            <Route exact path='/SignIn' element={<SignIn />}/>
         </Routes>
         </>
     )
 }
 
 export default Routerslink
-const RoutesOutsite = () => {
-    <>
-        <Routes>
-            <Route exact path='/register' element={<SignUp/>} />
-            <Route exact path='/register' element={<SignIn/>} />
-        </Routes>
-    </>
-}

@@ -1,9 +1,9 @@
 import React from 'react';
-const Category = () =>{
+const CateLog = () =>{
     return (
         <div>
             Category
         </div>
     )
 }
-export default Category;
+export default CateLog;
