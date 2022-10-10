@@ -8,7 +8,9 @@
     -webkit-tap-highlight-color: transparent;
     user-select: none;
 }
-
+a:hover{
+    color:$main-color;
+}
 html {
     font-size: 15px;
 }
@@ -38,14 +40,14 @@ $value in $colors {
 }
 
 @each $frame in $numbers {
-    .grid-col-#{frame} {
+    .grid-col-#{$frame} {
         grid-template-columns: repeat($frame, 1fr);
     }
 
 }
 
 @each $frame in $numbers {
-    .grid-col-md-#{frame} {
+    .grid-col-md-#{$frame} {
         @include tablet {
             grid-template-columns: repeat($frame, 1fr);
 
@@ -55,10 +57,9 @@ $value in $colors {
 }
 
 @each $frame in $numbers {
-    .grid-col-sm-#{frame} {
+    .grid-col-sm-#{$frame} {
         @include mobile {
             grid-template-columns: repeat($frame, 1fr);
-
         }
     }
 
@@ -67,9 +68,12 @@ $value in $colors {
 .container {
     width: 100%;
     max-width: $max-Desktop-width;
-    padding: 0 100px;
+    padding: 0 50px;
     margin: auto;
-
+    
+    @include tablet{
+        padding:0;
+    }
     @include tablet {
         padding: 0 20px;
 
@@ -92,3 +96,6 @@ $value in $colors {
         margin-top: calc(($header-tablet-height)+10px)
     }
 }   
+.grid{
+    display: grid;
+}

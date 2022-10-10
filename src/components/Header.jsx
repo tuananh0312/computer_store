@@ -8,7 +8,7 @@ const NavItem = [
   },
   {
     display: "Sản phẩm",
-    path: "/product",
+    path: "/catelog",
 
   },
   {
@@ -24,8 +24,8 @@ const NavItem = [
 const Header = () => {
   const { pathname } = useLocation()
   const activeNavBar = NavItem.findIndex(e => e.path === pathname)
-  const headerRef = useRef(null)
-  const menuLeft = useRef(null);
+  const headerRef = useRef(null) /// active param when handle 
+  const menuLeft = useRef(null);/// toggle menuLefft
   const menuToggle =()=>{
     menuLeft.current.classList.toggle('active');
   }
@@ -41,6 +41,7 @@ const Header = () => {
   }
   useEffect(() => {
     window.addEventListener("scroll", handleScroll)
+  // ------ DISUNMOUTED WHEN REMOVE FUNCTION -------------------------------- 
     return () => {
       window.removeEventListener("scroll", handleScroll)
     };
